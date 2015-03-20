@@ -68,4 +68,6 @@ theme: jacman
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/flyhigher139/gevin-blog.git
+  repo: https://github.com/flyhigher139/flyhigher139.github.io
+  # type: git
+  # repo: https://gitcafe.com/gevin/gevin.git
