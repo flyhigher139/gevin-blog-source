@@ -33,13 +33,16 @@ sudo service nginx restart
 
 用python的pip安装最简单：
 ```bash
-apt-get install python-dev #不安装这个，下面的安装可能会失败
-pip install uwsgi
+sudo apt-get install python-dev #不安装这个，下面的安装可能会失败
+sudo pip install uwsgi
 ```
 
 #3. 基于uWSGI和nginx部署Django
 
 ##1.原理
+
+基于nginx和uwsgi部署django后，从客户端发起请求到服务器响应请求，会经过一下几个环节：
+
 ```bash
 the web client <-> the web server(nginx) <-> the socket <-> uwsgi <-> Django
 ```
